@@ -660,3 +660,78 @@ body.noMask #description {
 #dropMenu > div:hover {
 	text-decoration: underline;
 }
+
+/* 移动端适配样式 */
+@media screen and (max-width: 768px) {
+	/* 菜单容器样式 */
+	.menu {
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.9);
+		padding: 10px;
+		text-align: center;
+	}
+
+	/* 菜单按钮样式 */
+	.menuBtn {
+		display: inline-block;
+		padding: 12px 15px;
+		margin: 5px;
+		font-size: 16px;
+		background: rgba(255, 255, 255, 0.1);
+		color: #fff;
+		border-radius: 4px;
+		min-width: 100px;
+		text-align: center;
+	}
+
+	/* 语言选择器样式 */
+	.customSelect {
+		height: auto;
+	}
+
+	.customSelectOptions {
+		position: absolute;
+		bottom: 100%;
+		right: 0;
+		background: rgba(0, 0, 0, 0.95);
+		border-radius: 4px;
+		margin-bottom: 5px;
+	}
+
+	.customSelectOptions > ul {
+		max-height: none;
+		width: 150px;
+		padding: 5px 0;
+	}
+
+	.customSelectOptions > ul > li {
+		padding: 10px;
+		font-size: 16px;
+		height: auto;
+	}
+
+	/* 确保主内容区域不被底部菜单遮挡 */
+	#main {
+		padding-bottom: 120px;
+	}
+
+	/* 调整按钮点击区域 */
+	.menu span {
+		margin: 5px;
+		float: none;
+	}
+}
+
+/* 通用菜单按钮悬停效果 */
+.menuBtn:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+/* 隐藏不需要的元素 */
+.logo, .logo-icon, .menu .appStore {
+	display: none;
+}
