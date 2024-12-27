@@ -671,23 +671,23 @@ body.noMask #description {
 		bottom: 0;
 		width: 100%;
 		background: rgba(0, 0, 0, 0.9);
-		padding: 15px;
+		padding: 20px;
 		text-align: center;
 	}
 
 	/* 菜单按钮样式 */
 	.menuBtn {
 		display: inline-block;
-		padding: 15px 20px;
-		margin: 6px;
-		font-size: 20px;
+		padding: 18px 25px;
+		margin: 8px;
+		font-size: 24px;
 		background: rgba(255, 255, 255, 0.1);
 		color: #fff;
-		border-radius: 6px;
-		min-width: 120px;
+		border-radius: 8px;
+		min-width: 140px;
 		text-align: center;
 		height: auto;
-		line-height: 24px;
+		line-height: 28px;
 	}
 
 	/* 语言选择器样式 */
@@ -700,46 +700,53 @@ body.noMask #description {
 		bottom: 100%;
 		right: 0;
 		background: rgba(0, 0, 0, 0.95);
-		border-radius: 6px;
-		margin-bottom: 8px;
+		border-radius: 8px;
+		margin-bottom: 10px;
 	}
 
 	.customSelectOptions > ul {
 		max-height: none;
-		width: 180px;
-		padding: 8px 0;
+		width: 200px;
+		padding: 10px 0;
 	}
 
 	.customSelectOptions > ul > li {
-		padding: 12px 15px;
-		font-size: 20px;
+		padding: 15px 20px;
+		font-size: 24px;
 		height: auto;
-		line-height: 24px;
+		line-height: 28px;
 	}
 
 	/* 确保主内容区域不被底部菜单遮挡 */
 	#main {
-		padding-bottom: 160px;
+		padding-bottom: 180px;
 	}
 
 	/* 调整按钮点击区域 */
 	.menu span {
-		margin: 6px;
+		margin: 8px;
 		float: none;
 	}
 
 	/* 调整事件面板中的按钮 */
 	.eventPanel .button {
-		font-size: 20px;
-		padding: 12px 20px;
-		min-width: 120px;
-		margin: 8px;
+		font-size: 24px;
+		padding: 15px 25px;
+		min-width: 140px;
+		margin: 10px;
 	}
 
 	/* 调整事件面板文字 */
 	.eventPanel {
-		font-size: 20px;
-		line-height: 1.4;
+		font-size: 24px;
+		line-height: 1.5;
+		padding: 25px;
+	}
+
+	/* 调整事件面板标题 */
+	.eventTitle {
+		font-size: 26px;
+		top: -15px;
 	}
 }
 
