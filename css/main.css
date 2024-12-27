@@ -693,21 +693,27 @@ body.noMask #description {
 	/* 语言选择器样式 */
 	.customSelect {
 		height: auto;
+		position: relative;
 	}
 
 	.customSelectOptions {
-		position: absolute;
-		bottom: 100%;
-		right: 0;
+		position: fixed;
+		bottom: 180px;
+		right: 10px;
 		background: rgba(0, 0, 0, 0.95);
 		border-radius: 8px;
-		margin-bottom: 10px;
+		width: 280px;
+		max-height: 60vh;
+		overflow-y: auto;
 	}
 
 	.customSelectOptions > ul {
 		max-height: none;
-		width: 200px;
+		width: 100%;
 		padding: 10px 0;
+		margin: 0;
+		list-style: none;
+		position: relative;
 	}
 
 	.customSelectOptions > ul > li {
@@ -715,6 +721,37 @@ body.noMask #description {
 		font-size: 24px;
 		height: auto;
 		line-height: 28px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.customSelectOptions > ul > li:last-child {
+		border-bottom: none;
+	}
+
+	.customSelectOptions > ul > li:first-child {
+		background: rgba(0, 0, 0, 0.95);
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+		font-weight: bold;
+	}
+
+	.customSelectOptions::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	.customSelectOptions::-webkit-scrollbar-track {
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+	.customSelectOptions::-webkit-scrollbar-thumb {
+		background: rgba(255, 255, 255, 0.3);
+		border-radius: 3px;
+	}
+
+	.customSelectOptions > ul > li:not(:first-child):hover {
+		background: rgba(255, 255, 255, 0.15);
 	}
 
 	/* 确保主内容区域不被底部菜单遮挡 */
