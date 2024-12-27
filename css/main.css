@@ -65,18 +65,15 @@ div#header {
 }
 
 .logo {
-  position: fixed;
-  left: 10px;
-  bottom: 0;
-  z-index: 10;
+	display: none;
 }
 
 .logo-icon {
-  height: 40px;
+	display: none;
 }
 
 .logo-icon > path {
-  stroke: black;
+	stroke: black;
 }
 
 .menu {
@@ -143,7 +140,7 @@ span.customSelectOptions {
 }
 
 .menu .appStore {
-	font-weight: bold;
+	display: none;
 }
 
 div.headerButton {
